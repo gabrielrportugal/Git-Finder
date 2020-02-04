@@ -1,0 +1,13 @@
+﻿[Panel1]
+Coordinates=87,78,55,36
+
+[ToolBar1]
+Coordinates=10,78,67,36
+
+[]
+Coordinates=89,10,96,58
+Visible=True
+
+[lblGitFinder]
+Coordinates=10,10,69,58
+

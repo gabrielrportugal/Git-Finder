@@ -1,0 +1,57 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited lblGitFinder: TLabel
+      Size.Width = 480.000000000000000000
+      inherited btnClique: TButton
+        Position.X = 425.000000000000000000
+      end
+    end
+  end
+  inherited Panel1: TPanel
+    Size.Width = 480.000000000000000000
+    Size.Height = 781.000000000000000000
+    inherited Layout1: TLayout
+      Size.Width = 420.000000000000000000
+      Size.Height = 736.000000000000000000
+      inherited lblInfoUsuario: TLabel
+        Size.Width = 400.000000000000000000
+      end
+      inherited edtUsuario: TEdit
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoSeguidores: TLabel
+        Position.Y = 207.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoSeguindo: TLabel
+        Position.Y = 250.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoRepositorios: TLabel
+        Position.Y = 293.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoLocal: TLabel
+        Position.Y = 336.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoNome: TLabel
+        Position.Y = 121.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoID: TLabel
+        Position.Y = 164.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+      inherited lblInfoEmail: TLabel
+        Position.Y = 379.000000000000000000
+        Size.Width = 400.000000000000000000
+      end
+    end
+  end
+end

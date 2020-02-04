@@ -1,0 +1,60 @@
+inherited Form1_iPhone4in: TForm1_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited lblGitFinder: TLabel
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      inherited btnClique: TButton
+        Position.X = 265.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+    end
+  end
+  inherited Panel1: TPanel
+    Size.Width = 320.000000000000000000
+    Size.Height = 504.000000000000000000
+    inherited Layout1: TLayout
+      Size.Width = 260.000000000000000000
+      Size.Height = 459.000000000000000000
+      inherited lblInfoUsuario: TLabel
+        Size.Width = 240.000000000000000000
+      end
+      inherited edtUsuario: TEdit
+        Size.Width = 240.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+      inherited lblInfoSeguidores: TLabel
+        Position.Y = 195.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+      inherited lblInfoSeguindo: TLabel
+        Position.Y = 238.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+      inherited lblInfoRepositorios: TLabel
+        Position.Y = 281.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+      inherited lblInfoLocal: TLabel
+        Position.Y = 324.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+      inherited lblInfoNome: TLabel
+        Position.Y = 109.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+      inherited lblInfoID: TLabel
+        Position.Y = 152.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+      inherited lblInfoEmail: TLabel
+        Position.Y = 367.000000000000000000
+        Size.Width = 240.000000000000000000
+      end
+    end
+  end
+end
