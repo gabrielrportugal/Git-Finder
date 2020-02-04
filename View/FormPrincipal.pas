@@ -29,10 +29,6 @@ type
     lblInfoEmail: TLabel;
     procedure btnCliqueClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
-    procedure NetHTTPClient1AuthEvent(const Sender: TObject;
-      AnAuthTarget: TAuthTargetType; const ARealm, AURL: string;
-      var AUserName, APassword: string; var AbortAuth: Boolean;
-      var Persistence: TAuthPersistenceType);
   private
     { Private declarations }
     RESTClient: TRESTClient;
@@ -58,23 +54,23 @@ uses
 
 procedure TForm1.btnCliqueClick(Sender: TObject);
 var
-  LRetorno: IHTTPResponse;
+  //LRetorno: IHTTPResponse;
   LRetornoJSON: TJSONObject;
 begin
 
     RESTClient := TRESTClient.Create('https://api.github.com/');
     RESTRequest := TRESTRequest.Create(nil);
     RESTRequest.Client := RESTClient;
-    RESTRequest.Resource := 'users/{usuario }{ ';
+    RESTRequest.Resource := 'users/{usuario}';
     RESTRequest.Params.AddUrlSegment('usuario', edtUsuario.Text);
     RESTRequest.Execute;
-    LRetorno := RESTRequest.Response.JSONValue as TJSONObject;
+    LRetornoJSON := RESTRequest.Response.JSONValue as TJSONObject;
 
   //NetHTTPRequest1.URL := 'https://api.github.com/users/' + edtUsuario.Text;
   //NetHTTPRequest1.
 
 
-   LRetornoJSON := LRetorno.ContentAsString as TJSONObject;
+   //LRetornoJSON := LRetorno.ContentAsString as TJSONObject;
 
    lblInfoNome.Text := 'Nome: ' + LRetornoJSON.GetValue('name').Value;
     lblInfoID.Text := 'Id: ' + LRetornoJSON.GetValue('id').Value;
